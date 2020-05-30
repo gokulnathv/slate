@@ -1,16 +1,140 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-light justify-content-between">
-  <a class="navbar-brand" href="#">
-    <img src="https://cdn.jsdelivr.net/gh/gokulnathv/slate@master/src/assets/slate.jpg" width="50" height="50" alt="Slate">Slate
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-  </form>
-  <div>
-     <img src="https://cdn.jsdelivr.net/gh/gokulnathv/slate@master/src/assets/default-profile.jpg" width="30" height="30" alt="" class="rounded-circle">
-   <span class="navbar-text">Gokulnath V</span>
-  </div>
-</nav>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar" #sidebar>
+        <div class="sidebar-header">
+            <img src="https://cdn.jsdelivr.net/gh/gokulnathv/slate@master/src/assets/slate.jpg" width="40" height="40" alt="Slate">
+            <h4>Slate-ToDo</h4>
+            <strong>Slate</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#TaskSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <i class="fas fa-clipboard-check"></i>
+                    All Tasks
+                </a>
+                <ul class="collapse list-unstyled" id="TaskSubmenu">
+                    <li>
+                        <a href="#">Task 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Task 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Task 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-calendar-alt"></i>
+                    Event
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-info" (click)="onToggleClick($event)">
+                  <i class="fas fa-bars"></i>
+              </button>
+
+          </div>
+      </nav>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="wrapper">
+    <nav id="sidebar" #sidebar>
+        <div class="sidebar-header">
+            <h3>Bootstrap Sidebar</h3>
+            <strong>BS</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#TaskSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <i class="fas fa-clipboard-check"></i>
+                    All Tasks
+                </a>
+                <ul class="collapse list-unstyled" id="TaskSubmenu">
+                    <li>
+                        <a href="#">Task 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Task 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Task 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-calendar-alt"></i>
+                    Event
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light justify-content-between">
+          <div class="container-fluid">
+               <button type="button" #sidebarCollapse id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+            </div>
+          <a class="navbar-brand" href="#">
+            <img src="https://cdn.jsdelivr.net/gh/gokulnathv/slate@master/src/assets/slate.jpg" width="50" height="50" alt="Slate">Slate
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div>
+            <img src="https://cdn.jsdelivr.net/gh/gokulnathv/slate@master/src/assets/default-profile.jpg" width="30" height="30" alt="" class="rounded-circle">
+          <span class="navbar-text">Gokulnath V</span>
+          </div>
+        </nav>
+    </div>
+</div> -->
